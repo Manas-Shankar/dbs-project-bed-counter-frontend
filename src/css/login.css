@@ -1,0 +1,190 @@
+
+
+  .modal_content_login {
+    /* border:1px solid black; */
+    position: absolute;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    width: 95vw;
+    height: 74vh;
+    background-color: #22252a;
+    padding: 20px;
+    color:white;
+    right:-360%;
+    z-index: 1;
+    top:5rem;
+    border-radius: 15px 15px 15px 15px;
+    cursor: default;
+  }
+  
+  .close_login {
+    color: white;
+    font-size: 50px;
+    position: relative;
+    float:left;
+    cursor: pointer;
+    /* border:1px solid black; */
+  }  
+
+  .login-container{
+    /* border:1px solid black; */
+    height:100%;
+    /* padding:5px; */
+    margin:0 10px 0px 40px;
+}
+
+.form-login{
+  /* border:3px solid black; */
+  padding:20px 40px 150px 0px;  
+  text-align: center;
+  margin:0 0 0 170px;
+  width:70%;
+}
+
+.label-login-1{
+  position: relative;
+  right:4.7rem;
+  top:5px;
+}
+
+.role-label{
+  position: relative;
+  margin-left:270px;
+  /* border:1px solid black; */
+}
+
+.role-login{
+    margin:10px;
+    margin-bottom:40px;
+    position: relative;
+    right:2.5rem;
+    width:17.3rem;
+    background-color: #4c444f;
+    border:none;
+    outline:none;
+    border-radius: 7.5px;
+    height:1.6rem;
+    text-align:center;
+    font-size:17px;
+    font-family: 'Roboto Slab',serif;
+    color:white;
+  }
+  
+  .role-login:focus{
+    background-color: #4c444f;
+    border:1px solid white;
+    color:white;
+    font-family: 'Roboto Slab',serif;
+  }
+
+.email-login{
+  margin:10px;
+  position: relative;
+  left:4rem;
+  width:17rem;
+  background-color: #4c444f;
+  border:none;
+  outline:none;
+  border-radius: 7.5px;
+  height:1.6rem;
+  text-align:center;
+  font-size:15px;
+  font-family: 'Roboto Slab',serif;
+  color:white;
+}
+
+.email-login:focus{
+  background-color: #4c444f;
+  border:1px solid white;
+  color:white;
+  font-family: 'Roboto Slab',serif;
+}
+
+.email-login:autofill{
+  background-color: #4c444f;
+  font-family: 'Roboto Slab',serif;
+}
+
+.label-login-2{
+  position: relative;
+  right:13.5rem;
+  top:2.5rem;
+}
+
+.password-login{
+  top:30px;
+  position: relative;
+  left:1.5rem;
+  width:17rem;
+  background-color: #4c444f;
+  border:none;
+  outline:none;
+  border-radius: 7.5px;
+  height:1.6rem;
+  text-align:center;
+  font-size:15px;
+  font-family: 'Roboto Slab',serif;
+  color:white;
+}
+
+.password-login:focus{
+  border:1px solid white;
+  color:white;
+  font-family: 'Roboto Slab',serif;
+}
+
+.eye-login{
+  /* border:1px solid black; */
+  background:inherit;
+  width:18px;
+  position: relative;
+  top:2.1rem;
+  left:0rem;
+}
+
+.hide{
+  opacity: 0.5;
+}
+
+.submit-login{
+  width:150px;
+  position: relative;
+  top:5rem;
+  height:40px;
+  left:10px;
+  cursor: pointer;
+  background:inherit;
+  font-family: 'Roboto Slab', serif;
+  border:none;
+  outline:none;
+  color:white;
+  font-size:20px;
+  border:1px solid white;
+  border-radius: 5px;
+}
+
+.submit-login:hover{
+  background-color: #4c444f;
+  
+}
+
+.login-choice{
+  /* border:1px solid black; */
+  position: relative;
+  top:150px;
+  font-size:10px;
+  left:25px;
+}
+
+.role-label-login{
+  position: relative;
+  left:9rem;
+  bottom:35px;
+}
+
+
+
+
+
+
+
+

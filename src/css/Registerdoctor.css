@@ -1,0 +1,99 @@
+.modal_content_register_doctor {
+    border:1px solid black;
+    position: absolute;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    width: 95vw;
+    height: 74vh;
+    background-color: #22252a;
+    color:white;
+    padding: 20px;
+    right:10px;
+    z-index: 1;
+    top:7rem;
+    border-radius: 15px 15px 15px 15px;
+    cursor: default;
+    
+}
+
+.register-doctor-container{
+    /* border:1px solid black; */
+    height:100%;
+    /* padding:5px; */
+    margin:0 10px 0px 40px;
+}
+
+
+.close_register_doctor{
+    color: white;
+    font-size: 60px;
+    position: relative;
+    float:left;
+    cursor: pointer;
+}
+
+.form-register-doctor{
+    /* border:1px solid black; */
+  padding:0px 40px 150px 0px;  
+  text-align: center;
+  margin:0 0 0 170px;
+  width:70%;
+  font-family:'Roboto Slab',serif;
+  font-size:22px;
+}
+
+.role-label-register-doctor{
+    position: relative;
+    left:1rem;
+    bottom:25px;
+}
+
+.super-branch-doctor{
+    width: 110%;
+    padding:15px;
+}
+
+.beds1-register-doctor{
+    position: relative;
+  margin-right:65px;
+  margin-left:10px;
+   background-color: #4c444f;
+  border:none;
+  outline:none;
+  border-radius: 7.5px;
+  height:1.6rem;
+  text-align:center;
+  font-size:15px;
+  font-family: 'Roboto Slab',serif;
+  color:white;
+}
+
+.beds2-register-doctor{
+    position: relative;
+    right:40px;
+    margin-right:40px;
+    margin-left:10px;
+     background-color: #4c444f;
+    border:none;
+    outline:none;
+    border-radius: 7.5px;
+    height:1.6rem;
+    text-align:center;
+    font-size:15px;
+    font-family: 'Roboto Slab',serif;
+    color:white;
+}
+.label-specilization-1{
+    position: relative;
+    /* border:1px solid black; */
+    right:40px;
+}
+.label-register-3-doctor{
+    position: relative;
+  right:3.7rem;
+  bottom:40px;
+}
+
+
+
+
+

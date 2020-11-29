@@ -1,0 +1,120 @@
+.super-branch-patient{
+    width: 110%;
+    padding:15px;
+    /* border:1px solid black; */  
+}
+
+.label-register-3-patient{
+    margin-right:100px;
+  margin-right:100px;  
+  margin-bottom:10px;
+}
+
+.email-register-2-patient{
+  margin-right:20px;
+  margin-bottom:20px;
+    width:17rem;
+    background-color: #4c444f;
+    border:none;
+    outline:none;
+    border-radius: 7.5px;
+    height:1.6rem;
+    text-align:center;
+    font-size:15px;
+    color:white;
+    font-family: 'Roboto Slab',serif;
+  
+  }
+  
+  .email-register-2-patient:focus{
+    background-color: #4c444f;
+    border:1px solid white;
+    color:white;
+    font-family: 'Roboto Slab',serif;
+  }
+
+
+  .label-beds-1-patient{
+    position: relative;
+    top:40px;
+    right:200px;
+  }
+
+  .beds-register-patient{
+      margin-top:20px;
+      margin-left:70px;
+      margin-bottom:20px;
+      background-color: #4c444f;
+    border:none;
+    outline:none;
+    border-radius: 7.5px;
+    height:1.6rem;
+    text-align:center;
+    font-size:15px;
+    color:white;
+    font-family: 'Roboto Slab',serif;
+  }
+
+  .beds-register-patient:focus{
+    background-color: #4c444f;
+    border:1px solid white;
+    color:white;
+    font-family: 'Roboto Slab',serif;
+  }
+
+
+  .beds-register-patient-1{
+    margin-top:30px;
+    margin-left:50px;
+    margin-bottom:20px;
+    background-color: #4c444f;
+    width:12rem;
+  border:none;
+  outline:none;
+  border-radius: 7.5px;
+  height:1.6rem;
+  text-align:center;
+  font-size:17px;
+  color:white;
+  font-family: 'Roboto Slab',serif;
+}
+
+.beds-register-patient-1:focus{
+  background-color: #4c444f;
+  border:1px solid white;
+  color:white;
+  font-family: 'Roboto Slab',serif;
+}
+
+  .label-hname-1-patient{
+      position: relative;
+      top:40px;
+      right:175px;
+  }
+
+  .submit-register-patient{
+    width:150px;
+    position: relative;
+    top:5rem;
+    height:40px;
+    right:170px;
+    cursor: pointer;
+    background:inherit;
+    font-family: 'Roboto Slab', serif;
+    border:none;
+    outline:none;
+    color:white;
+    font-size:20px;
+    border-radius: 5px;
+    border:1px solid white;
+  }
+  
+  .submit-register-patient:hover{
+    
+    background-color: #4c444f;
+    
+  }
+
+
+
+
