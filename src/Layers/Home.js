@@ -20,7 +20,7 @@ export class Home extends Component
             this.setState({
                 table_data:JSON.parse(JSON.parse(target.responseText))
             })
-            console.log(this.state.table_data['data'])
+            // console.log(this.state.table_data['data'])
           }
         const handleEvent=(event)=> {
           if(event.type==='progress')
@@ -36,6 +36,29 @@ export class Home extends Component
         xhr.open('POST', 'https://dbs-project.herokuapp.com/getdata')
         xhr.send()
 
+    }
+
+
+    needUpdate =()=>{
+        const handleResponse = ({ target }) => {
+            this.setState({
+                table_data:JSON.parse(JSON.parse(target.responseText))
+            })
+            console.log(this.state.table_data['data'])
+          }
+        const handleEvent=(event)=> {
+          if(event.type==='progress')
+           { alert(`${event.type}: ${event.loaded} %`)}
+           else{
+            alert(`${event.type}: ${event.loaded}`)
+           }
+          }
+
+        const xhr = new XMLHttpRequest()
+        xhr.addEventListener('load', handleResponse)
+        xhr.addEventListener('error', handleEvent);
+        xhr.open('POST', 'https://dbs-project.herokuapp.com/getdata')
+        xhr.send()
     }
 
     setName = (e) => {
@@ -67,6 +90,9 @@ export class Home extends Component
                 </div>
 
                 <div className='table-section'>
+                <div>
+                    <button onClick={this.needUpdate} className='refresh-button-home'>Refresh</button>
+                  </div>
                     {
                         Object.keys(this.state.table_data).length===0?
                         (
@@ -115,3 +141,80 @@ export class Home extends Component
     }
 
 export default Home
+
+
+
+
+
+
+
+
+
+// needUpdate= ()=>{
+//     if(this.props.location.login_data)    
+//     {
+//    console.log(this.props.location);
+//    this.setState({
+//      login_data:this.props.location.login_data
+//    })
+  
+//    const handleResponse1 = ({ target }) => {
+//      this.setState({
+//          table_data:JSON.parse(JSON.parse(target.responseText))
+//      })
+//      // console.log(this.state.table_data['data'])
+//    }
+//   const handleEvent1=(event)=> {
+//    if(event.type==='progress')
+//     { alert(`${event.type}: ${event.loaded} %`)}
+//     else{
+//      alert(`${event.type}: ${event.loaded}`)
+//     }
+//    }
+  
+//   const xhr1 = new XMLHttpRequest()
+//   xhr1.addEventListener('load', handleResponse1)
+//   xhr1.addEventListener('error', handleEvent1);
+//   xhr1.open('POST', 'https://dbs-project.herokuapp.com/getdata')
+//   xhr1.send()
+  
+//   // DOCTOR DATA 
+//   const data = new FormData()
+//   const handleResponse = ({ target }) => {
+//    obj_doctor = JSON.parse(JSON.parse(target.responseText));
+//    this.setState({
+//        doctor_data:JSON.parse(JSON.parse(target.responseText))
+//     })
+//     console.log(obj_doctor)
+//   }
+
+//       const handleEvent=(event)=> {
+//   if(event.type==='progress')
+//    { alert(`${event.type}: ${event.loaded} %`)}
+//    else{
+//     alert(`${event.type}: ${event.loaded}`)
+//    }
+//   }
+// const xhr = new XMLHttpRequest()
+// data.append('b_id',this.props.location.login_data['b_id'])
+// // data.append('b_id','5fb4d6f7731517e5dc6dd3ac')
+// xhr.addEventListener('load', handleResponse)
+// xhr.addEventListener('error', handleEvent);
+// xhr.open('POST', 'https://dbs-project.herokuapp.com/getdoctors')
+// xhr.send(data)
+  
+//   }
+//   else{
+//     window.history.pushState(null, null, document.URL);
+//     window.addEventListener('popstate', function () {
+//     window.history.pushState(null, null, document.URL);
+//    console.log(window.history);
+//    });
+//    window.addEventListener('load', (event) => {
+//      window.location = '/'
+//    });
+//   }
+//   this.list_patients();
+//   this.get_history();
+// }
+
