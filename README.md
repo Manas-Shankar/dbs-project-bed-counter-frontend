@@ -1,3 +1,8 @@
+Database systems project for the fifth semester. The website is a bed counter website to monitor the number of available beds in different hospitals. Uses a react frontend, a python-flask server that connects to a mongoDB backend to store hospital details, no of avaliable beds, doctor details at each hospital, patient admittance details as well as the discharge details.
+
+site can be found at https://bedcounter-dbs.netlify.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
